@@ -1,7 +1,7 @@
 import streamlit as st
 import tempfile
 import shutil
-import os 
+import os
 from extraction import extract_text
 from util import DEFAULT_TEXT
 
@@ -24,7 +24,7 @@ def download_file(translated_text, filename):
     )
 
 
-text_container = st.container()
+text_container = st.container(height=250, border=True)
 extracted_text = DEFAULT_TEXT
 
 # File uploader
