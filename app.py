@@ -1,6 +1,7 @@
 import streamlit as st
 import tempfile
 import shutil
+import os 
 from extraction import extract_text
 from util import DEFAULT_TEXT
 
